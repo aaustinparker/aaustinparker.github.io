@@ -1,5 +1,5 @@
 ---
-title: "Project One: This Webstite!"
+title: "First Project: This Website!"
 categories:
   - Projects
 tags:
@@ -10,29 +10,29 @@ toc_label: "Steps"
 toc_icon: "arrow-progress"
 ---
 
-This website was a fun project. I wanted to keep it simple and started out with only a single self-imposed requirement - trying something new. I've used tools like [Node][node] and [Vite][vite] to design websites, but my needs were much simpler his time. I didn't need reactive webpages or a complicated backend - just a handful of basic, static pages. So ruling out the major frameworks, I looked for free tools that came bundled with a hosting solution. Enter [GitHub Pages][gh-pages]! 
+This website was a fun project. I challenged myself to try a tool I'd never used before, ruling out familiar options like [Node][node] and [Vite][vite]. My needs were simple anyhow - I didn't need reactive webpages or complicated server features. I just needed some lightweight scaffolding to support static pages, along with a free hosting solution if possible. Enter [GitHub Pages][gh-pages]! 
 
 
 ## GitHub Pages
 
-I want to shake hands with whoever came up with this idea. To get a website up and running, you just have to push your static pages to a Github repo. If the repo name matches your username, Github recognizes it as the code for your personal website. It then runs the site through a preset build pipeline and hosts it at the URL of your choice. This process repeats whenever you push code, with only a short delay before you see the changes reflected on your website. This saves a ton of legwork and lets you focus on site content, making it a perfect fit for my situation. There are other tools out there, with Amazon offering [their own cool option][aws-amplify] that I've experimented with. The great thing about Github, of course, is that I can see manage my source code and website settings in one place. I'm also comfortable with their UI - AWS looks more like controlling a Mars rover. 
+I want to shake hands with whoever came up with this idea. To get a website up and running, all you have to do is push your web content to a Github repo. If the repo name matches your username, Github treats it as source code for a personal website. It runs your files through a build pipeline and hosts them at a configurable URL. This happens every time you push code to your repo, applying changes to the website after a brief delay. This workflow was perfect for me since it eliminated legwork and let me focus on blog-type content. There are other ways to achieve this, of course - Amazon offers [their own tool][aws-amplify] to build websites from a public repo. Github wins out just because I can manage everything from one place - source code, deployment settings, etc. I'm also more comfortable with Github's UI than AWS (which looks like the control panel for a SpaceX rocket).
 
-So now we have a hosting solution. But someone dared to ask - what if we made it even easier?
+So now we have a hosting solution. But someone dared to ask - what if we could make it even easier?
 
 ## Jekyll
 
-[Jekyll][https://jekyllrb.com/] is a tool that takes your static files and generates a final website. This confused me, initially, because static files like HTML shouldn't need additional processing to display in a browser. That's true, but Jekyll gives you *way* more options when writing those files. One feature it supports is [Markdown][markdown], a syntax for simple text formatting. Writing long paragraphs in HTML can be cumbersome since it fills your text with HTML tags that require proper spellings, closures, etc. Markdown is much easier to read and maintain, using control characters in place of tags. I just add a couple asterisks for **bold text** and some ticks for `code`, something you see on lots of websites these days like JIRA. Needless to say, it's a big plus for a text-focused blog or personal site. Jekyll, conveniently, converts Markdown into HTML during the build process. The resulting HTML is then doled out to visitors. This is perfect if you want formatted pages without too much custom code (or a paid service like Wordpress).
+[Jekyll][https://jekyllrb.com/] is a build tool that generates a website from your static files (JS, HTML, CSS). This confused me, initially, because static files like HTML shouldn't need additional processing to create a webpage. That's true - Jekyll just gives you *tons* more options when creating those files. One feature it offers is [Markdown][markdown], a universal syntax for formatting text. HTML formatting is often cumbersome as it clutters your text with ugly tags that distract from the real content. Markdown is easier to read and write, using special characters instead of tags. For example, writing **bold text** just requires a couple asterisks; writing `code` just requires some tickmarks. You'll run into this syntax on tons of text-focused sites like JIRA. It gives you a nice, blog-like appearance without paying for additional tools like Wordpress. 
 
-Another key concept in Jekyll is the **layout**. This is the core HTML of a webpage that Markdown gets slotted into. By way of example, notice how my site has an "About the author" section next to every article. Rather than copy-pasting that HTML everywhere, each article inherits from a shared "article layout." This is basically just an HTML file with two things: 1) a placeholder for each article and 2) the HTML fragment for "About the author." When Jekyll builds the site, iit creates articles by simply by slotting the text into the placeholder section. And voila - every article now comes with an "About" section. This "About" fragment is shared everywhere, so I can change something like font size and have it apply everywhere. And if the site has multiple authors? No problem. You just define another "placeholder" in the layout, same as the article text. Each article can then override the author details if needed.
+Another core component of Jekyll is **layouts**. A layout is basically an HTML template that your content gets inserted into. For example, notice how my site has an "About the author" section next to every article? Rather than copy-pasting the HTML, each article inherits from a shared "article layout." This is basically an HTML file with 1) placeholders for article text and 2) an HTML fragment for "About the author." When Jekyll builds the site, it slots the text for each article into the placeholder. And voila - every article now has an "About" section with identical formatting. I can modify that section (e.g. increase the font size) and see the change reflected everywhere. And if I want special sections for some articles, I'd just create a new placeholder for the chosen few to override.
 
-One implication of layouts is that, *hypothetically*, someone with really good design sense could distribute layouts for other people to use. People could override placeholders with their own information and tweak various settings to achieve their desired look. That brings us to the final topic - themes.
+One implication of layouts is that, *hypothetically*, someone with really good design sense could distribute layouts for other people to use. People could overwrite placeholders with their own info and tweak various settings to achieve the desired look. That brings us to the final topic - themes.
 
 ## Themes
 
-The building blocks of this site come from a Jekyll theme called [Minimal Mistakes][min-mistakes]. I inherited all sorts of cool layouts from the author, while retaining the freedom to customize things to my liking. I hope to keep plugging away at the site and learning from the experience.
+The core layouts on this site come from a Jekyll theme called [Minimal Mistakes][min-mistakes]. I inherited all sorts of neat building blocks while retaining the freedom to customize everything. The site will be an ongoing project as I come up with ideas and tweaks.
 
 ## Wrap Up
-Hopefully this was an informative read! Shoot me a message if I can edit or clarify anything.
+Hopefully this was informative! Shoot me a message if I can edit or clarify anything.
 
 
 [gh-pages]: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
