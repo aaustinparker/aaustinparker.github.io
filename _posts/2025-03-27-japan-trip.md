@@ -24,14 +24,14 @@ Yet surprisingly my favorite meal of the trip wasn't sushi. It was a lesser-know
 
 ![image-center](/assets/images/Japan/teishoku.jpg){: .align-center}
 
-Other noteworthy stops are posted below. I highly recommend Japan to anyone who can endure the 10-hour plane ride - it's an awesome time!
+Other fun stops are posted below. I highly recommend Japan to anyone who can stomach the 10-hour plane ride - it's an awesome time!
 
 
 
 <figure class="half">
 	<img src="/assets/images/Japan/distant_tower.jpg">
 	<img src="/assets/images/Japan/top_view.jpg">
-	<figcaption>Distant and topside view from the <a href="https://en.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree</a> (Seattle Space Needle on steroids)</figcaption>
+	<figcaption>View from the <a href="https://en.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree</a> (Seattle Space Needle on steroids)</figcaption>
 </figure>
 
 <figure class="align-center">

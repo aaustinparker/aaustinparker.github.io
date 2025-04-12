@@ -72,6 +72,8 @@ social:
     - "https://www.linkedin.com/in/austindparker"
     - "https://github.com/aaustinparker"
 
+atom_feed:
+  hide: true
 
 footer:
   links:
