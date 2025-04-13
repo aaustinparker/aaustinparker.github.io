@@ -10,11 +10,13 @@ toc_label: "Tools"
 toc_icon: "wrench"
 ---
 
-Everyone has their go-to tools for coding. I want to mention mine in the hopes of evangelizing people who haven't used them yet. They're flexible and compatible with a huge range of projects.
+Everyone has their favorite tools for coding. I want to mention mine in the hopes of persuading people who haven't used them yet. They're flexible and compatible with a huge range of projects.
 
 ## Docker
 
-I love [Docker][docker] for a few reasons. First and foremost, I can easily switch between desktop and laptop when writing code. Maintaining two workspaces is a chore, especially when you're making tiny tweaks to get a program running. To give an example, I recently wrote a tiny OpenGL program to draw some shapes. I installed the required packages and compiled a couple libraries on my desktop. Then I decided to touch grass, a rare occurrence! I cloned the project on my laptop and tried running it, but I couldn't remember the exact steps to get everything set up. Docker is awesome because it preserves the steps in a [Dockerfile][dockerfile] that instantly configures your new workspace. It lets you choose any image as a starting point, most of which have dependencies pre-installed. This is great if you're trying to learn a new language since you can just defer to the experts on what you need to get going. You can also add your own commands to the Dockerfile for more granular setup. Once complete, you push the Dockerfile to source control and can easily weclome new people onboard. They can even use a different OS for development as long as it supports Docker.
+I love [Docker][docker] for a bunch of reasons. First and foremost, I can easily switch between desktop and laptop when writing code. Maintaining two workspaces is a chore, especially when you're making tiny tweaks to get a program running. To give an example, I recently wrote a tiny OpenGL program to draw some shapes. I installed the required packages and compiled a couple libraries on my desktop. Then I decided to go outside, a rare event! I cloned the project on my laptop and tried running it, but I couldn't remember the exact steps to get everything working.
+
+Docker is awesome because it preserves the steps in a [Dockerfile][dockerfile] that can replicate your workspace anywhere. You can even use a base image with all the required dependencies pre-installed. This is really helpful when learning a new language since you can just defer to the experts on what you need to start coding. You can also sprinkle in your own custom commands if needed. Once complete, you push the Dockerfile to source control and can start onboarding new developers with no hassle. They can even use a different OS for development as long as it supports Docker.
 
 Another cool thing? I don't have to worry about cluttering up my computer. All the tools and dependencies I install are living in a container, isolated from the underlying system. Once I'm done with a project, I just delete the parent container and I'm done! No need to track down and uninstall things. Big plus for neat freaks!
 
