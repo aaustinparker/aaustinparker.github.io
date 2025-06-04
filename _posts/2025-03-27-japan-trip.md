@@ -20,11 +20,11 @@ The trip lasted two weeks. We spent the first half in the capital city of Tokyo 
 
 The food was a major highlight for me. Thanks to the great dollar-to-yen rate at the time, we were able to eat amazing food at insanely low prices. Sushi was especially cheap since it's common in Japan (and not the "exotic delicacy" we pay boatloads for in the States). We became regular customers at a sushi bar where you stood at the counter and ordered directly from the chef. Getting recognized by the staff after a few visits was a cool experience.
 
-My favorite meal of the trip wasn't sushi, surprisingly. It was a less-famous meal called "teishoku" (定食) that's basically a big platter of different foods. You order from a list of side dishes like miso soup, edamame, fish, and tempura, all of it served at one time. This was a great way to try new foods, even intimidating delicacies like [nattō][natto] (sticky, fermented soybeans). My go-to technique was combining everything into one bite and just letting the flavor go wild. Our favorite restaurant was tiny hole in the wall run by a passionate crew. Wandering down a random alleyway can reward you with some killer food in Japan.
+My favorite meal of the trip wasn't sushi, surprisingly. It was a more obscure meal called "teishoku" (定食) that's basically a big platter of foods. You order from a list of side dishes like miso soup, edamame, fish, and tempura, all served at the same time. This was a great way to try new foods, even intimidating delicacies like [nattō][natto] (sticky, fermented soybeans). My go-to technique was combining everything into one bite and just letting the flavors go wild. Our favorite restaurant was tiny hole-in-the-wall run by a passionate crew. Wandering down a random alleyway can reward you with some killer food in Japan.
 
 ![image-center](/assets/images/Japan/teishoku.jpg){: .align-center}
 
-Other fun moments are posted below. I highly recommend Japan to anyone who can endure a long plane ride - it's an awesome time!
+Other fun moments are posted below. I recommend Japan to anyone who can endure a long plane ride - it's an awesome time!
 
 
 
@@ -42,12 +42,12 @@ Other fun moments are posted below. I highly recommend Japan to anyone who can e
 <figure class="half">
 	<img src="/assets/images/Japan/osaka_bridge.jpg">
 	<img src="/assets/images/Japan/park.jpg">
-	<figcaption>Casual views from Osaka, a more relaxed city than Tokyo</figcaption>
+	<figcaption>Casual views from Osaka, a more laidback</figcaption>
 </figure>
 
 <figure class="align-center">
   	<img src="/assets/images/Japan/sumo.png">
-  <figcaption>Friend trying (failing) to move a sumo wrestler</figcaption>
+  <figcaption>My friend trying (and failing) to move a sumo wrestler</figcaption>
 </figure>
 
 <figure class="align-center">
