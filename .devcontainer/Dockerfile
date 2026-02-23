@@ -1,0 +1,3 @@
+FROM ruby:3.3
+
+EXPOSE 4000
