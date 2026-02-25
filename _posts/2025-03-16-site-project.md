@@ -10,29 +10,33 @@ toc_label: "Steps"
 toc_icon: "arrow-progress"
 ---
 
-This site was a fun project. I challenged myself to try tools I'd never used before, ruling out familiar options like [Node][node] and [Vite][vite]. My needs were simple anyhow - I didn't need reactive webpages or complex server features. I just needed some lightweight scaffolding to serve static pages, coupled with a free hosting solution. Enter [GitHub Pages][gh-pages]! 
+This site was a fun project. I challenged myself to try something new, ruling out familiar tools like [Node][node] and [Vite][vite]. My needs were simple anyhow - I didn't need reactive webpages or complex servers. I just needed some lightweight scaffolding to serve static pages, coupled with a free hosting service. Enter [GitHub Pages][gh-pages]! 
 
 
 ## GitHub Pages
 
-I want to shake hands with whoever came up with this idea. To get your website up and running, you just have to push your project files to a Github repo. If the repo is named a certain way, Github recognizes it as source code for your personal website. It runs your files (HTML/JS/CSS) through a build pipeline and hosts them at a configurable URL. This happens every time you update the repo, applying changes to the site almost instantaneously. This workflow was perfect for me since it skipped past the boilerplate and let me focus on site content. There are other ways to achieve this, of course - Amazon offers [their own tool][aws-amplify] to deploy websites from public repos. Github won out because I prefer managing everything from one place - source code, deployment settings, etc. (I'm also more comfortable with the Github UI than AWS, which looks like a NASA control panel).
+To get your site up and running, all you have to do is push your source code to a Github repo. The repo name signals to Github that this is as a website to deploy. It runs your files (HTML/JS/CSS) through a build pipeline and hosts them remotely. Once you've registered your domain (e.g. *apdevelopercorner.com*) with a DNS provider like Cloudflare, you just map it to Github's hosting endpoint. It looks exactly like a self-hosted website from the user's perspective.
 
-So now we have a way to build and deploy the site. But what if we could make it even easier?
+ Updates are easy too. Pushing to your repo triggers a rebuild via Github Actions, making your edits visible almost instantly. This workflow is perfect since it reduces setup and lets you focus on content. There are similar options out there - Amazon offers [their own tool][aws-amplify] for repo deployments. I chose Github just because I like managing everything from one place - source code, deployment settings, etc.
+
+So now we have an easy way to deploy the site. But what if we could make it even easier?
 
 ## Jekyll
 
-[Jekyll][jekyll] is a build tool that generates pages for your website. This confused me, initially, because static files like HTML shouldn't need additional processing to create a webpage. That's true - Jekyll just gives you *tons* more options when writing those files. One feature it supports is [Markdown][markdown], a universal syntax for text formatting. Formatting blogs is a pain in HTML since clutters your text with various tags. Markdown is much easier to work with, replacing tags with control characters. For example, writing **bold text** just requires a couple of asterisks; writing `code` just requires some tickmarks. You'll run into this syntax on text-focused sites like JIRA. It gives you a nice, blog-like look without requiring third-party tools like Wordpress. 
+[Jekyll][jekyll] is a build tool that generates webpages. This might sound confusing since HTML files don't require any extra processing to render. That's true - Jekyll just extends what your files can do. One of the biggest additions is [Markdown][markdown], a handy syntax for formatting text. Blogging is cumbersome with HTML since it clutters your text with blocky tags. Markdown uses simple characters that are much less verbose and intrusive. For example, writing **bold text** just requires a couple of asterisks; writing `code` just requires some tickmarks. It gives you a nice, blog-like feel without extra tools like Wordpress.
 
-Another core component of Jekyll is **layouts**. A layout is basically an HTML template that surrounds your custom content. For example, notice how my site has an "About the author" section next to every article? Rather than copy-pasting the HTML, each article "inherits" from a shared layout. The layout consists of 1) a placeholder for article text and 2) the hard-coded fragment for "About the author." When Jekyll builds the site, it slots the article text into the placeholder and voila - every article gets an "About" section with identical formatting. I can tweak the appearance (e.g. update the author name) and see the change reflected everywhere. And if I want special behavior for some articles, I can just create more placeholders to override.
+Another big feature in Jekyll is **layouts**. A layout is basically an HTML template wrapping custom content. For example, notice how my site has an "About the author" section next to each article? That's inherited from a shared layout. It consists of a hard-coded "About" section and a placeholder for article text. When Jekyll builds the site, it slots each article into the placeholder area and voila - every page has an "About" section. I can tweak the visuals (e.g. update the author name) and see that change reflected everywhere.
 
-One implication of layouts is that, *hypothetically*, someone with really good design sense could distribute layouts for other people to use. People could override placeholders with their own info and tweak various settings to achieve the desired look. That brings us to the final topic - themes.
+Another benefit is that people with good design sense can distribute layouts for other people to use. Users can insert their own content and tweak various settings to achieve the desired look. That brings us to the final topic - themes.
 
 ## Themes
 
-The basic layouts on this site come from a Jekyll theme called [Minimal Mistakes][min-mistakes]. It provides all sorts of sleek features like headers, nav menus, and social links - a pretty expansive list. What's great is that you can customize the site once the core page structure is set up. I'll treat the site as an ongoing project and keep pushing updates - would love to try some niche visual stuff like shaders. Stay tuned!
+The layouts on this site come from a Jekyll theme called [Minimal Mistakes][min-mistakes]. It includes sleek features like headers, nav menus, and paging - perfect for blogs. It's a great scaffolding tool before we add custom styles. 
+
+I'll treat this site as an ongoing project and keep pushing updates - would love to try some niche visual stuff like CSS animations. Stay tuned!
 
 ## Wrap Up
-Hopefully this was informative! Shoot me a message if I can edit or clarify anything.
+Hopefully this was informative. Shoot me an email if I can edit or clarify anything.
 
 
 [gh-pages]: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
