@@ -39,6 +39,8 @@ I'll treat this site as an ongoing project and keep pushing updates - would love
 ## Wrap Up
 Hopefully this was informative. Shoot me an email if I can edit or clarify anything.
 
+If you're curious, the code for the site can be found [here][github].
+
 
 [gh-pages]: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
 [vite]: https://vite.dev/guide/
@@ -47,3 +49,4 @@ Hopefully this was informative. Shoot me an email if I can edit or clarify anyth
 [jekyll]: https://jekyllrb.com/
 [markdown]: https://en.wikipedia.org/wiki/Markdown
 [min-mistakes]: https://mmistakes.github.io/minimal-mistakes/about/
+[github]: https://github.com/aaustinparker/aaustinparker.github.io
